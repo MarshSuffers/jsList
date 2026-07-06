@@ -60,6 +60,9 @@ function addProduct() {
   //   output.appendChild(div);
   // }
 
+  //Code above was not working well
+  //Below is the solution found with the instructor
+
   for (let i = 0; i < productArray.length; i++) {
     let test = document.createElement("div");
     console.log(productArray[i]);
