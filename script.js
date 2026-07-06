@@ -47,14 +47,25 @@ function addProduct() {
 
   // The code below is not finished. Use what you have learned about the
   // forEach loop to complete it
-  productArray.forEach(updateProductList);
 
-  function updateProductList(item) {
-    console.log(item);
-    // Line 41 above cleared the output div. Now you need to update it
-    // here with each item in the productArray as its being looped through.
-    // Ask an instructor for help if needed.
-    output.innerHTML = input;
+  //productArray.forEach(updateProductList);
+
+  // function updateProductList(item) {
+  //   console.log(item);
+  //   // Line 41 above cleared the output div. Now you need to update it
+  //   // here with each item in the productArray as its being looped through.
+  //   // Ask an instructor for help if needed.
+  //   const div = document.createElement("div");
+  //   div.innerHTML = input;
+  //   output.appendChild(div);
+  // }
+
+  for (let i = 0; i < productArray.length; i++) {
+    let test = document.createElement("div");
+    console.log(productArray[i]);
+    test.style.display = "block";
+    test.textContent = productArray[i];
+    output.appendChild(test);
   }
 
   // Assignment 4:
